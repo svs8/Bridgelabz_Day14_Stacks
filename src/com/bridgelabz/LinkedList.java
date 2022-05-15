@@ -34,8 +34,8 @@ public class LinkedList<T> {
         return head.data;
     }
 
-    public void pop(T peakValue) {
-        node<T> nodetopop=new node<>(peakValue);
+    public void pop(T data) {
+        node<T> nodetopop=new node<>(data);
         nodetopop=head;
         node<T> nextnode=nodetopop.next;
         head=nextnode;
@@ -55,4 +55,5 @@ public class LinkedList<T> {
             tail = newNode;
         }
     }
+
 }

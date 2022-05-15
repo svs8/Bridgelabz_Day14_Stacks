@@ -34,7 +34,19 @@ public class stackMain {
         linkedlist1.add(56);
         System.out.println("Elements in the Queue are");
         linkedlist1.Display();
-        
+
+        System.out.println("Dequeue operation");
+        linkedlist1.pop(70);
+        System.out.println("After first DEQUEUE");
+        linkedlist1.Display();
+        linkedlist1.pop(30);
+        System.out.println("After Second DEQUEUE");
+        linkedlist1.Display();
+        linkedlist1.pop(56);
+        System.out.println("After third DEQUEUE");
+        linkedlist1.Display();
+
+
     }
 
 }
