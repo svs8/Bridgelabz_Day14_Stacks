@@ -29,4 +29,18 @@ public class LinkedList<T> {
             temp=temp.next;
         }
     }
+
+    public T peek() {
+        return head.data;
+    }
+
+    public void pop(T peakValue) {
+        node<T> nodetopop=new node<>(peakValue);
+        nodetopop=head;
+        node<T> nextnode=nodetopop.next;
+        head=nextnode;
+        nodetopop.next=null;
+        nodetopop.data=null;
+
+    }
 }
