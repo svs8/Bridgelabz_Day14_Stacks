@@ -43,4 +43,16 @@ public class LinkedList<T> {
         nodetopop.data=null;
 
     }
+
+    public void add(T data) {
+        node<T> newNode=new node<>(data);
+        if(head==null){
+            head=newNode;
+            tail=newNode;
+        }
+        else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
 }

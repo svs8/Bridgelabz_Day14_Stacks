@@ -26,8 +26,15 @@ public class stackMain {
         System.out.println("peeked value "+peakValue3);//70
         System.out.println("popped value "+peakValue3);
 
+        System.out.println("=======================================================");
 
-
+        LinkedList<Integer> linkedlist1=new LinkedList<>();
+        linkedlist1.add(70);
+        linkedlist1.add(30);
+        linkedlist1.add(56);
+        System.out.println("Elements in the Queue are");
+        linkedlist1.Display();
+        
     }
 
 }
